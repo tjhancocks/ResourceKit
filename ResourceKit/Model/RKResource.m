@@ -23,6 +23,7 @@
 //
 
 #import "RKResource.h"
+#import "RKType.h"
 
 @implementation RKResource {
     __strong RKType *_type;

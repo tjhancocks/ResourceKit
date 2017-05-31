@@ -32,6 +32,10 @@
 #import "RKResourceFileResourceListParser.h"
 #import "RKTypeBuilder.h"
 #import "RKResourceBuilder.h"
+#import "NSData+RKDataParser.h"
+#import "NSFileHandle+RKDataParser.h"
+#import "RKResource.h"
+#import "RKType.h"
 
 @implementation RKResourceFile {
     __strong NSString *_path;

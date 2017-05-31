@@ -23,6 +23,8 @@
 //
 
 #import "RKResourceBuilder.h"
+#import "RKResource.h"
+#import "RKType.h"
 #import "RKResourcePOD.h"
 
 @implementation RKResourceBuilder

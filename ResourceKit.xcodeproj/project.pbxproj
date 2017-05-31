@@ -19,22 +19,22 @@
 		EF22BD4C1EDDACC400B9A59A /* RKResourceFile.h in Headers */ = {isa = PBXBuildFile; fileRef = EF22BD4A1EDDACC400B9A59A /* RKResourceFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF22BD4D1EDDACC400B9A59A /* RKResourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = EF22BD4B1EDDACC400B9A59A /* RKResourceFile.m */; };
 		EF22BD4F1EDDBD9100B9A59A /* RKParserProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EF22BD4E1EDDBD9100B9A59A /* RKParserProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF22BD521EDDBE3400B9A59A /* RKResourceFilePreambleParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EF22BD501EDDBE3400B9A59A /* RKResourceFilePreambleParser.h */; };
+		EF22BD521EDDBE3400B9A59A /* RKResourceFilePreambleParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EF22BD501EDDBE3400B9A59A /* RKResourceFilePreambleParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		EF22BD531EDDBE3400B9A59A /* RKResourceFilePreambleParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EF22BD511EDDBE3400B9A59A /* RKResourceFilePreambleParser.m */; };
-		EF22BD571EDDBF9000B9A59A /* RKResourceFileParserPOD.h in Headers */ = {isa = PBXBuildFile; fileRef = EF22BD551EDDBF9000B9A59A /* RKResourceFileParserPOD.h */; };
+		EF22BD571EDDBF9000B9A59A /* RKResourceFileParserPOD.h in Headers */ = {isa = PBXBuildFile; fileRef = EF22BD551EDDBF9000B9A59A /* RKResourceFileParserPOD.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		EF22BD581EDDBF9000B9A59A /* RKResourceFileParserPOD.m in Sources */ = {isa = PBXBuildFile; fileRef = EF22BD561EDDBF9000B9A59A /* RKResourceFileParserPOD.m */; };
 		EF22BD5A1EDDC09F00B9A59A /* RKResourceFilePreambleParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF22BD591EDDC09F00B9A59A /* RKResourceFilePreambleParserTests.m */; };
 		EF22BD5D1EDDC3E800B9A59A /* RsrcMapCompressedFlag.hex in Resources */ = {isa = PBXBuildFile; fileRef = EF22BD5B1EDDC3E800B9A59A /* RsrcMapCompressedFlag.hex */; };
 		EF22BD5E1EDDC3E800B9A59A /* RsrcMapMetaData.hex in Resources */ = {isa = PBXBuildFile; fileRef = EF22BD5C1EDDC3E800B9A59A /* RsrcMapMetaData.hex */; };
-		EF22BD611EDDC40700B9A59A /* RKResourceFileMapParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EF22BD5F1EDDC40700B9A59A /* RKResourceFileMapParser.h */; };
+		EF22BD611EDDC40700B9A59A /* RKResourceFileMapParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EF22BD5F1EDDC40700B9A59A /* RKResourceFileMapParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		EF22BD621EDDC40700B9A59A /* RKResourceFileMapParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EF22BD601EDDC40700B9A59A /* RKResourceFileMapParser.m */; };
 		EF22BD641EDDC66900B9A59A /* RKResourceFileMapParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF22BD631EDDC66900B9A59A /* RKResourceFileMapParserTests.m */; };
-		EF22BD671EDDD3F300B9A59A /* RKResourceFileTypeListParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EF22BD651EDDD3F300B9A59A /* RKResourceFileTypeListParser.h */; };
+		EF22BD671EDDD3F300B9A59A /* RKResourceFileTypeListParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EF22BD651EDDD3F300B9A59A /* RKResourceFileTypeListParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		EF22BD681EDDD3F300B9A59A /* RKResourceFileTypeListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EF22BD661EDDD3F300B9A59A /* RKResourceFileTypeListParser.m */; };
 		EF22BD6B1EDDD65E00B9A59A /* NSData+RKDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EF22BD691EDDD65E00B9A59A /* NSData+RKDataParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF22BD6C1EDDD65E00B9A59A /* NSData+RKDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EF22BD6A1EDDD65E00B9A59A /* NSData+RKDataParser.m */; };
 		EF22BD6E1EDDD75600B9A59A /* RKDataParserDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF22BD6D1EDDD75600B9A59A /* RKDataParserDataTests.m */; };
-		EF22BD711EDDD88900B9A59A /* RKTypePOD.h in Headers */ = {isa = PBXBuildFile; fileRef = EF22BD6F1EDDD88900B9A59A /* RKTypePOD.h */; };
+		EF22BD711EDDD88900B9A59A /* RKTypePOD.h in Headers */ = {isa = PBXBuildFile; fileRef = EF22BD6F1EDDD88900B9A59A /* RKTypePOD.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		EF22BD721EDDD88900B9A59A /* RKTypePOD.m in Sources */ = {isa = PBXBuildFile; fileRef = EF22BD701EDDD88900B9A59A /* RKTypePOD.m */; };
 		EF22BD741EDDD99C00B9A59A /* RKResourceFileTypeListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EF22BD731EDDD99C00B9A59A /* RKResourceFileTypeListParser.m */; };
 		EF22BD761EDDF6D900B9A59A /* RsrcTypeList.hex in Resources */ = {isa = PBXBuildFile; fileRef = EF22BD751EDDF6D900B9A59A /* RsrcTypeList.hex */; };
@@ -43,17 +43,17 @@
 		EF2441671EDD5B9C00C90F55 /* RKDataParserProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2441661EDD5B9C00C90F55 /* RKDataParserProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF24416A1EDD5BE900C90F55 /* NSFileHandle+RKDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2441681EDD5BE900C90F55 /* NSFileHandle+RKDataParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF24416B1EDD5BE900C90F55 /* NSFileHandle+RKDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2441691EDD5BE900C90F55 /* NSFileHandle+RKDataParser.m */; };
-		EFBA47971EDDF96800A7A367 /* RKResourceFileResourceListParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA47951EDDF96800A7A367 /* RKResourceFileResourceListParser.h */; };
+		EFBA47971EDDF96800A7A367 /* RKResourceFileResourceListParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA47951EDDF96800A7A367 /* RKResourceFileResourceListParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		EFBA47981EDDF96800A7A367 /* RKResourceFileResourceListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA47961EDDF96800A7A367 /* RKResourceFileResourceListParser.m */; };
-		EFBA479B1EDDF9AB00A7A367 /* RKResourcePOD.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA47991EDDF9AA00A7A367 /* RKResourcePOD.h */; };
+		EFBA479B1EDDF9AB00A7A367 /* RKResourcePOD.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA47991EDDF9AA00A7A367 /* RKResourcePOD.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		EFBA479C1EDDF9AB00A7A367 /* RKResourcePOD.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA479A1EDDF9AA00A7A367 /* RKResourcePOD.m */; };
 		EFBA479E1EDDFFFD00A7A367 /* RsrcResourceHeaders.hex in Resources */ = {isa = PBXBuildFile; fileRef = EFBA479D1EDDFFFD00A7A367 /* RsrcResourceHeaders.hex */; };
 		EFBA47A01EDE001600A7A367 /* RKResourceFileResourceListParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA479F1EDE001600A7A367 /* RKResourceFileResourceListParserTests.m */; };
-		EFBA47A41EDE03CA00A7A367 /* RKTypeBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA47A21EDE03CA00A7A367 /* RKTypeBuilder.h */; };
+		EFBA47A41EDE03CA00A7A367 /* RKTypeBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA47A21EDE03CA00A7A367 /* RKTypeBuilder.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		EFBA47A51EDE03CA00A7A367 /* RKTypeBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA47A31EDE03CA00A7A367 /* RKTypeBuilder.m */; };
-		EFBA47A71EDE049900A7A367 /* RKPODBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA47A61EDE049900A7A367 /* RKPODBuilder.h */; };
+		EFBA47A71EDE049900A7A367 /* RKPODBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA47A61EDE049900A7A367 /* RKPODBuilder.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		EFBA47A91EDE059E00A7A367 /* RKTypeBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA47A81EDE059E00A7A367 /* RKTypeBuilderTests.m */; };
-		EFBA47AC1EDE070600A7A367 /* RKResourceBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA47AA1EDE070600A7A367 /* RKResourceBuilder.h */; };
+		EFBA47AC1EDE070600A7A367 /* RKResourceBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA47AA1EDE070600A7A367 /* RKResourceBuilder.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		EFBA47AD1EDE070600A7A367 /* RKResourceBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA47AB1EDE070600A7A367 /* RKResourceBuilder.m */; };
 		EFBA47AF1EDE07E100A7A367 /* RKResourceBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA47AE1EDE07E100A7A367 /* RKResourceBuilderTests.m */; };
 		EFBA47B11EDE7FC700A7A367 /* RKResourceFileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA47B01EDE7FC700A7A367 /* RKResourceFileTests.m */; };
@@ -129,6 +129,8 @@
 		EFBA47B21EDE7FFA00A7A367 /* ResourceFork.rsrc */ = {isa = PBXFileReference; lastKnownFileType = archive.rsrc; path = ResourceFork.rsrc; sourceTree = "<group>"; };
 		EFBA47B41EDE83A700A7A367 /* ComplexResourceFork.rsrc */ = {isa = PBXFileReference; lastKnownFileType = archive.rsrc; path = ComplexResourceFork.rsrc; sourceTree = "<group>"; };
 		EFBA47B61EDE861F00A7A367 /* BadResourceFork.rsrc */ = {isa = PBXFileReference; lastKnownFileType = archive.rsrc; path = BadResourceFork.rsrc; sourceTree = "<group>"; };
+		EFBA47D81EDEB44200A7A367 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		EFBA47D91EDEB44200A7A367 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,8 @@
 		EF2441401EDD5ACC00C90F55 = {
 			isa = PBXGroup;
 			children = (
+				EFBA47D81EDEB44200A7A367 /* LICENSE */,
+				EFBA47D91EDEB44200A7A367 /* README.md */,
 				EF24414C1EDD5ACC00C90F55 /* ResourceKit */,
 				EF2441571EDD5ACD00C90F55 /* ResourceKitTests */,
 				EF24414B1EDD5ACC00C90F55 /* Products */,
@@ -299,22 +303,22 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF22BD4F1EDDBD9100B9A59A /* RKParserProtocol.h in Headers */,
 				EF2441671EDD5B9C00C90F55 /* RKDataParserProtocol.h in Headers */,
 				EF24416A1EDD5BE900C90F55 /* NSFileHandle+RKDataParser.h in Headers */,
+				EF22BD6B1EDDD65E00B9A59A /* NSData+RKDataParser.h in Headers */,
+				EF22BD3D1EDD76B000B9A59A /* RKType.h in Headers */,
+				EF22BD431EDD972100B9A59A /* RKResource.h in Headers */,
+				EF22BD4C1EDDACC400B9A59A /* RKResourceFile.h in Headers */,
+				EF24415B1EDD5ACD00C90F55 /* ResourceKit.h in Headers */,
 				EF22BD711EDDD88900B9A59A /* RKTypePOD.h in Headers */,
 				EFBA47AC1EDE070600A7A367 /* RKResourceBuilder.h in Headers */,
-				EF22BD3D1EDD76B000B9A59A /* RKType.h in Headers */,
 				EF22BD671EDDD3F300B9A59A /* RKResourceFileTypeListParser.h in Headers */,
-				EF22BD431EDD972100B9A59A /* RKResource.h in Headers */,
 				EFBA47971EDDF96800A7A367 /* RKResourceFileResourceListParser.h in Headers */,
-				EF22BD4F1EDDBD9100B9A59A /* RKParserProtocol.h in Headers */,
-				EF22BD6B1EDDD65E00B9A59A /* NSData+RKDataParser.h in Headers */,
 				EF22BD611EDDC40700B9A59A /* RKResourceFileMapParser.h in Headers */,
 				EFBA47A71EDE049900A7A367 /* RKPODBuilder.h in Headers */,
 				EFBA479B1EDDF9AB00A7A367 /* RKResourcePOD.h in Headers */,
 				EFBA47A41EDE03CA00A7A367 /* RKTypeBuilder.h in Headers */,
-				EF22BD4C1EDDACC400B9A59A /* RKResourceFile.h in Headers */,
-				EF24415B1EDD5ACD00C90F55 /* ResourceKit.h in Headers */,
 				EF22BD521EDDBE3400B9A59A /* RKResourceFilePreambleParser.h in Headers */,
 				EF22BD571EDDBF9000B9A59A /* RKResourceFileParserPOD.h in Headers */,
 			);

@@ -39,3 +39,4 @@ FOUNDATION_EXPORT const unsigned char ResourceKitVersionString[];
 #import <ResourceKit/RKType.h>
 #import <ResourceKit/RKResource.h>
 #import <ResourceKit/RKResourceFile.h>
+

@@ -22,8 +22,7 @@
 // SOFTWARE.
 //
 
-#import <ResourceKit/ResourceKit.h>
-#import "RKPODBuilder.h"
+#import <ResourceKit/RKPODBuilder.h>
 
 @interface RKTypeBuilder : NSObject <RKPODBuilder>
 

@@ -23,6 +23,7 @@
 //
 
 #import "RKType.h"
+#import "RKResource.h"
 
 @implementation RKType {
     __strong NSString *_code;

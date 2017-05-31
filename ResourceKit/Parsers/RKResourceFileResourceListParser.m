@@ -23,9 +23,12 @@
 //
 
 #import "RKResourceFileResourceListParser.h"
-#import "RKResourceFileParserPOD.h"
-#import "RKTypePOD.h"
-#import "RKResourcePOD.h"
+
+#import <ResourceKit/RKDataParserProtocol.h>
+#import <ResourceKit/NSData+RKDataParser.h>
+#import <ResourceKit/RKResourceFileParserPOD.h>
+#import <ResourceKit/RKTypePOD.h>
+#import <ResourceKit/RKResourcePOD.h>
 
 #define RKResourceHeaderStructureDataLength   8
 

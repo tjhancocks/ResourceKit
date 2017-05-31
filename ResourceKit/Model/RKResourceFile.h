@@ -22,7 +22,7 @@
 // SOFTWARE.
 //
 
-#import <ResourceKit/ResourceKit.h>
+#import <Foundation/Foundation.h>
 
 @class RKType, RKResource;
 

@@ -23,6 +23,7 @@
 //
 
 #import "RKTypeBuilder.h"
+#import "RKType.h"
 #import "RKTypePOD.h"
 
 @implementation RKTypeBuilder

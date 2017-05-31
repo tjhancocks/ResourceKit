@@ -23,8 +23,11 @@
 //
 
 #import "RKResourceFileTypeListParser.h"
-#import "RKResourceFileParserPOD.h"
-#import "RKTypePOD.h"
+
+#import <ResourceKit/RKDataParserProtocol.h>
+#import <ResourceKit/NSData+RKDataParser.h>
+#import <ResourceKit/RKResourceFileParserPOD.h>
+#import <ResourceKit/RKTypePOD.h>
 
 #define RKTypeStructureDataLength   8
 

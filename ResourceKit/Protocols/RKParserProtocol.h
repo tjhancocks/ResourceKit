@@ -22,7 +22,8 @@
 // SOFTWARE.
 //
 
-#import <ResourceKit/ResourceKit.h>
+#import <Foundation/Foundation.h>
+#import "RKDataParserProtocol.h"
 
 @protocol RKParserProtocol <NSObject>
 
