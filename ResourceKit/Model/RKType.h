@@ -1,0 +1,54 @@
+//
+// MIT License
+//
+// Copyright (c) 2017 Tom Hancocks
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+//
+
+#import <ResourceKit/ResourceKit.h>
+
+@class RKResource;
+
+@interface RKType : NSObject
+
+/// The type code for the resources contained in the type group.
+@property (nonnull, atomic, copy, readonly) NSString *code;
+
+/// The number of resources contained in the type group.
+@property (atomic, assign, readonly) NSUInteger resourceCount;
+
+/// All of the resources currently belonging or associated with the type group.
+@property (nonnull, atomic, strong, readonly) NSArray <RKResource *> *allResources;
+
+
+/// Create a new type instance using the specified type code.
++ (nonnull instancetype)withCode:(nonnull NSString *)code;
+
+
+/// Add a new resource to the type group. If an existing resource
+/// with the same resource id is already present, then it will
+/// be replaced by the new resource.
+- (void)addResource:(nonnull RKResource *)resource;
+
+/// Retrieve the resource with the specified id. If the resource does not
+/// exist then it will return nil.
+- (nullable RKResource *)resourceWithId:(int16_t)id;
+
+@end
