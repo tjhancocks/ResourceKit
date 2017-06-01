@@ -22,36 +22,16 @@
 // SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
+#import <ResourceKit/RKResourceContainer.h>
 
-@class RKType, RKResource;
-
-@interface RKResourceFile : NSObject
+@interface RKResourceFile : NSObject <RKResourceContainer>
 
 /// The location of the file on disk.
 @property (nonnull, atomic, strong, readonly) NSString *path;
-
-/// A set of all resource types available in the file.
-@property (nonnull, atomic, strong, readonly) NSSet <RKType *> *allTypes;
-
 
 /// Initialise a new resource file at the specified file path. This will
 /// kick off parsing the resource fork immediately, and if parsing
 /// fails the initialiser will return nil.
 - (nullable instancetype)initWithContentsOfFile:(nonnull NSString *)path;
-
-
-/// Using the specified type, attempt to match it to one of the types in the
-/// resource file. If a match is made then the type instance from the resource
-/// file will be returned. Otherwise nil will be returned.
-- (nullable RKType *)typeWithType:(nullable RKType *)type;
-
-/// Retrieve all resources with the specified type. This is more of a convience
-/// method for -typeWithType:.
-- (nullable NSArray <RKResource *> *)resourcesWithType:(nullable RKType *)type;
-
-/// Retrieve a specific resource if it exists. If it does not exist, then
-/// nil will be returned.
-- (nullable RKResource *)resourceWithType:(nullable RKType *)type id:(int16_t)id;
 
 @end

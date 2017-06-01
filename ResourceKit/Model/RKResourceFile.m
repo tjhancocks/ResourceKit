@@ -39,7 +39,7 @@
 
 @implementation RKResourceFile {
     __strong NSString *_path;
-    __strong NSMutableSet <RKType *> *_types;
+    __strong NSMutableArray <RKType *> *_types;
 }
 
 #pragma mark - Initialisation
@@ -83,7 +83,7 @@
     }
     
     // Build all the actual structures from the PODs
-    _types = [NSMutableSet setWithArray:[RKTypeBuilder buildFromArrayOfPODs:resourceFilePod.typePods]];
+    _types = [[RKTypeBuilder buildFromArrayOfPODs:resourceFilePod.typePods] mutableCopy];
     
     NSArray <RKResource *> *allResources = [RKResourceBuilder buildFromArrayOfPODs:resourceFilePod.resourcePods];
     for (RKResource *resource in allResources) {

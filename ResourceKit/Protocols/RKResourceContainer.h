@@ -24,20 +24,24 @@
 
 #import <Foundation/Foundation.h>
 
-FOUNDATION_EXPORT double ResourceKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char ResourceKitVersionString[];
+@class RKType, RKResource;
 
-// Protocols
-#import <ResourceKit/RKDataParserProtocol.h>
-#import <ResourceKit/RKParserProtocol.h>
-#import <ResourceKit/RKResourceContainer.h>
+@protocol RKResourceContainer <NSObject>
 
-// Categories
-#import <ResourceKit/NSFileHandle+RKDataParser.h>
-#import <ResourceKit/NSData+RKDataParser.h>
+/// A set of all resource types available in the file.
+@property (nonnull, atomic, strong, readonly) NSArray <RKType *> *allTypes;
 
-// Model
-#import <ResourceKit/RKType.h>
-#import <ResourceKit/RKResource.h>
-#import <ResourceKit/RKResourceFile.h>
+/// Using the specified type, attempt to match it to one of the types in the
+/// resource file. If a match is made then the type instance from the resource
+/// file will be returned. Otherwise nil will be returned.
+- (nullable RKType *)typeWithType:(nullable RKType *)type;
 
+/// Retrieve all resources with the specified type. This is more of a convience
+/// method for -typeWithType:.
+- (nullable NSArray <RKResource *> *)resourcesWithType:(nullable RKType *)type;
+
+/// Retrieve a specific resource if it exists. If it does not exist, then
+/// nil will be returned.
+- (nullable RKResource *)resourceWithType:(nullable RKType *)type id:(int16_t)id;
+
+@end

@@ -43,6 +43,7 @@
 		EF2441671EDD5B9C00C90F55 /* RKDataParserProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2441661EDD5B9C00C90F55 /* RKDataParserProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF24416A1EDD5BE900C90F55 /* NSFileHandle+RKDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2441681EDD5BE900C90F55 /* NSFileHandle+RKDataParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF24416B1EDD5BE900C90F55 /* NSFileHandle+RKDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2441691EDD5BE900C90F55 /* NSFileHandle+RKDataParser.m */; };
+		EF3E7D971EE069E600CC8241 /* RKResourceContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = EF3E7D961EE069E600CC8241 /* RKResourceContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFBA47971EDDF96800A7A367 /* RKResourceFileResourceListParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA47951EDDF96800A7A367 /* RKResourceFileResourceListParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		EFBA47981EDDF96800A7A367 /* RKResourceFileResourceListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA47961EDDF96800A7A367 /* RKResourceFileResourceListParser.m */; };
 		EFBA479B1EDDF9AB00A7A367 /* RKResourcePOD.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA47991EDDF9AA00A7A367 /* RKResourcePOD.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -112,6 +113,7 @@
 		EF2441661EDD5B9C00C90F55 /* RKDataParserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKDataParserProtocol.h; path = Protocols/RKDataParserProtocol.h; sourceTree = "<group>"; };
 		EF2441681EDD5BE900C90F55 /* NSFileHandle+RKDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileHandle+RKDataParser.h"; path = "Categories/NSFileHandle+RKDataParser.h"; sourceTree = "<group>"; };
 		EF2441691EDD5BE900C90F55 /* NSFileHandle+RKDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileHandle+RKDataParser.m"; path = "Categories/NSFileHandle+RKDataParser.m"; sourceTree = "<group>"; };
+		EF3E7D961EE069E600CC8241 /* RKResourceContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKResourceContainer.h; path = Protocols/RKResourceContainer.h; sourceTree = "<group>"; };
 		EFBA47951EDDF96800A7A367 /* RKResourceFileResourceListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKResourceFileResourceListParser.h; path = Parsers/RKResourceFileResourceListParser.h; sourceTree = "<group>"; };
 		EFBA47961EDDF96800A7A367 /* RKResourceFileResourceListParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKResourceFileResourceListParser.m; path = Parsers/RKResourceFileResourceListParser.m; sourceTree = "<group>"; };
 		EFBA47991EDDF9AA00A7A367 /* RKResourcePOD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKResourcePOD.h; path = PODs/RKResourcePOD.h; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				EF2441661EDD5B9C00C90F55 /* RKDataParserProtocol.h */,
 				EF22BD4E1EDDBD9100B9A59A /* RKParserProtocol.h */,
 				EFBA47A61EDE049900A7A367 /* RKPODBuilder.h */,
+				EF3E7D961EE069E600CC8241 /* RKResourceContainer.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				EF22BD3D1EDD76B000B9A59A /* RKType.h in Headers */,
 				EF22BD431EDD972100B9A59A /* RKResource.h in Headers */,
 				EF22BD4C1EDDACC400B9A59A /* RKResourceFile.h in Headers */,
+				EF3E7D971EE069E600CC8241 /* RKResourceContainer.h in Headers */,
 				EF24415B1EDD5ACD00C90F55 /* ResourceKit.h in Headers */,
 				EF22BD711EDDD88900B9A59A /* RKTypePOD.h in Headers */,
 				EFBA47AC1EDE070600A7A367 /* RKResourceBuilder.h in Headers */,
