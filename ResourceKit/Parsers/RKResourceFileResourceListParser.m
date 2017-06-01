@@ -30,7 +30,7 @@
 #import <ResourceKit/RKTypePOD.h>
 #import <ResourceKit/RKResourcePOD.h>
 
-#define RKResourceHeaderStructureDataLength   8
+#define RKResourceHeaderStructureDataLength   12
 
 @implementation RKResourceFileResourceListParser
 
@@ -48,7 +48,7 @@
         
         // Step through each of the resources for the type. Each resource header is
         // 8 bytes long.
-        for (NSUInteger idx = 0; idx <= typePod.lastResourceIndex; ++idx) {
+        for (NSUInteger idx = 0; idx < typePod.numberOfResources; ++idx) {
             
             // Seek to the start of the resource header for the type.
             data.position = pod.mapOffset + pod.typeListOffset + typePod.resourceOffset + (idx * RKResourceHeaderStructureDataLength);
@@ -60,6 +60,7 @@
                 resourcePod.nameOffset = resourceData.readWord;
                 resourcePod.flags = resourceData.readByte;
                 resourcePod.offset = (resourceData.readWord << 8) | resourceData.readByte;
+                resourcePod.handleReserved = resourceData.readLong;
                 return resourcePod;
             }];
             

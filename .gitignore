@@ -28,4 +28,4 @@ xcuserdata/
 *.dSYM.zip
 *.dSYM
 
-Pods/
+./Pods/

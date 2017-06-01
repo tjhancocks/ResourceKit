@@ -50,12 +50,12 @@
     pod.mapSize = 0x25;
     
     pod.typeListOffset = 0x00;
-    pod.nameListOffset = 0x10;
+    pod.nameListOffset = 0x18;
     
     RKTypePOD *testType = RKTypePOD.new;
     testType.code = @"TEST";
     testType.resourceOffset = 0;
-    testType.lastResourceIndex = 1;
+    testType.numberOfResources = 2;
     pod.typePods = @[testType].mutableCopy;
 }
 

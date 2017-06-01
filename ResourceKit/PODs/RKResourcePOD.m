@@ -22,45 +22,8 @@
 // SOFTWARE.
 //
 
-#import "RKResourceFileMapParser.h"
-#import "RKResourceFileParserPOD.h"
+#import "RKResourcePOD.h"
 
-@implementation RKResourceFileMapParser
-
-+ (BOOL)parseData:(id<RKDataParserProtocol>)data againstObject:(RKResourceFileParserPOD *)pod
-{
-    if (!data || !pod) {
-        return NO;
-    }
-    
-    // Seek to the start of the resource map, and check to ensure that it is valid.
-    // This is done by confirming the values currently in the POD.
-    data.position = pod.mapOffset;
-    
-    if (pod.dataOffset != data.readLong ||
-        pod.mapOffset != data.readLong ||
-        pod.dataSize != data.readLong ||
-        pod.mapSize != data.readLong)
-    {
-        return NO;
-    }
-    
-    // The next 2 values are reserved by the system.
-    pod.handleToNextResouceMapReserved = data.readLong;
-    pod.fileReferenceNumberReserved = data.readWord;
-    
-    // We now have a flags field.
-    pod.mainFlags = data.readWord;
-    if (pod.mainFlags & 0x0040) {
-        // Compressed. Can't handle this!
-        return NO;
-    }
-    
-    // Finally read some more offsets.
-    pod.typeListOffset = data.readWord;
-    pod.nameListOffset = data.readWord;
-    
-    return YES;
-}
+@implementation RKResourcePOD
 
 @end

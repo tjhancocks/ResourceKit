@@ -65,18 +65,18 @@
     XCTAssertTrue([RKResourceFileTypeListParser parseData:fileHandle againstObject:pod]);
     
     XCTAssertEqual(pod.typePods.count, 3);
-    XCTAssertEqual(pod.lastTypeIndex, 2);
+    XCTAssertEqual(pod.numberOfTypes, 3);
     
     XCTAssertEqualObjects(pod.typePods[0].code, @"TYPE");
-    XCTAssertEqual(pod.typePods[0].lastResourceIndex, 1);
+    XCTAssertEqual(pod.typePods[0].numberOfResources, 2);
     XCTAssertEqual(pod.typePods[0].resourceOffset, 0x1000);
     
     XCTAssertEqualObjects(pod.typePods[1].code, @"TEST");
-    XCTAssertEqual(pod.typePods[1].lastResourceIndex, 2);
+    XCTAssertEqual(pod.typePods[1].numberOfResources, 3);
     XCTAssertEqual(pod.typePods[1].resourceOffset, 0x2000);
     
     XCTAssertEqualObjects(pod.typePods[2].code, @"PICT");
-    XCTAssertEqual(pod.typePods[2].lastResourceIndex, 3);
+    XCTAssertEqual(pod.typePods[2].numberOfResources, 4);
     XCTAssertEqual(pod.typePods[2].resourceOffset, 0x3000);
 }
 

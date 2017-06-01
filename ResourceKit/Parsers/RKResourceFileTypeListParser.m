@@ -43,18 +43,18 @@
     // This is done by confirming the values currently in the POD.
     data.position = pod.mapOffset + pod.typeListOffset;
     
-    // Read in the resource count. This is a final index value.
-    pod.lastTypeIndex = data.readWord;
+    // Read in the number of resource types. This value is minus 1 to the real value.
+    pod.numberOfTypes = data.readWord + 1;
     
     // Step through each resource type structure in the map. Each entry is 8 bytes
     // long.
     pod.typePods = NSMutableArray.new;
-    for (NSInteger i = 0; i <= pod.lastTypeIndex; ++i) {
+    for (NSInteger i = 0; i < pod.numberOfTypes; ++i) {
         
         RKTypePOD *newTypePod = [data readDataOfLength:RKTypeStructureDataLength transform:^id(NSData *typeData) {
             RKTypePOD *typePod = RKTypePOD.new;
             typePod.code = [typeData readStringOfLength:4];
-            typePod.lastResourceIndex = typeData.readWord;
+            typePod.numberOfResources = typeData.readWord + 1;
             typePod.resourceOffset = typeData.readWord;
             return typePod;
         }];
