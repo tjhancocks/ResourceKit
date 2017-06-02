@@ -80,17 +80,80 @@
     XCTAssertNotEqual(resource.type, type);
 }
 
-- (void)testType_addValidReplacementResource_storesResourceAndTypeCountReflects
+- (void)testType_addValidResource_replacingDuplicates_storesResourceAndTypeCountReflects
 {
     RKType *type = [RKType withCode:@"TYPE"];
     RKResource *resource = [RKResource ofType:[RKType withCode:@"TYPE"] withId:128];
     [type addResource:resource];
     
     RKResource *replacementResource = [RKResource ofType:[RKType withCode:@"TYPE"] withId:128];
-    [type addResource:replacementResource];
+    [type addResource:replacementResource replacingDuplicates:YES];
     
     XCTAssertEqual(type.resourceCount, 1);
     XCTAssertEqual(replacementResource.type, type);
+}
+
+- (void)testType_addValidResource_notReplacingDuplicates_ignoresResourceAndTypeCountReflects
+{
+    RKType *type = [RKType withCode:@"TYPE"];
+    RKResource *resource = [RKResource ofType:[RKType withCode:@"TYPE"] withId:128];
+    [type addResource:resource];
+    
+    RKResource *replacementResource = [RKResource ofType:[RKType withCode:@"TYPE"] withId:128];
+    [type addResource:replacementResource replacingDuplicates:NO];
+    
+    XCTAssertEqual(type.resourceCount, 1);
+    XCTAssertNotEqual(replacementResource.type, type);
+}
+
+
+- (void)testType_mergeType_replacingDuplicates_storesResourceAndTypeCountReflects
+{
+    RKType *type = [RKType withCode:@"TYPE"];
+    RKResource *resource = [RKResource ofType:[RKType withCode:@"TYPE"] withId:128];
+    [type addResource:resource];
+    
+    RKType *newType = [RKType withCode:@"TYPE"];
+    RKResource *newResource = [RKResource ofType:[RKType withCode:@"TYPE"] withId:128];
+    [newType addResource:newResource];
+    
+    [type mergeType:newType replacingDuplicates:YES];
+    
+    XCTAssertEqual(type.resourceCount, 1);
+    XCTAssertEqual(newResource.type, type);
+}
+
+
+- (void)testType_mergeType_notReplacingDuplicates_ignoresResourceAndTypeCountReflects
+{
+    RKType *type = [RKType withCode:@"TYPE"];
+    RKResource *resource = [RKResource ofType:[RKType withCode:@"TYPE"] withId:128];
+    [type addResource:resource];
+    
+    RKType *newType = [RKType withCode:@"TYPE"];
+    RKResource *newResource = [RKResource ofType:[RKType withCode:@"TYPE"] withId:128];
+    [newType addResource:newResource];
+    
+    [type mergeType:newType replacingDuplicates:NO];
+    
+    XCTAssertEqual(type.resourceCount, 1);
+    XCTAssertNotEqual(newResource.type, type);
+}
+
+- (void)testType_mergeType_noDuplicationSpecified_replacesDuplicates
+{
+    RKType *type = [RKType withCode:@"TYPE"];
+    RKResource *resource = [RKResource ofType:[RKType withCode:@"TYPE"] withId:128];
+    [type addResource:resource];
+    
+    RKType *newType = [RKType withCode:@"TYPE"];
+    RKResource *newResource = [RKResource ofType:[RKType withCode:@"TYPE"] withId:128];
+    [newType addResource:newResource];
+    
+    [type mergeType:newType];
+    
+    XCTAssertEqual(type.resourceCount, 1);
+    XCTAssertEqual(newResource.type, type);
 }
 
 

@@ -43,7 +43,13 @@
 		EF2441671EDD5B9C00C90F55 /* RKDataParserProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2441661EDD5B9C00C90F55 /* RKDataParserProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF24416A1EDD5BE900C90F55 /* NSFileHandle+RKDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2441681EDD5BE900C90F55 /* NSFileHandle+RKDataParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF24416B1EDD5BE900C90F55 /* NSFileHandle+RKDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2441691EDD5BE900C90F55 /* NSFileHandle+RKDataParser.m */; };
+		EF3E7D901EDFFBED00CC8241 /* ResourceManagerTest1.rsrc in Resources */ = {isa = PBXBuildFile; fileRef = EF3E7D8E1EDFFBED00CC8241 /* ResourceManagerTest1.rsrc */; };
+		EF3E7D911EDFFBED00CC8241 /* ResourceManagerTest2.rsrc in Resources */ = {isa = PBXBuildFile; fileRef = EF3E7D8F1EDFFBED00CC8241 /* ResourceManagerTest2.rsrc */; };
+		EF3E7D951EE0695500CC8241 /* XCTestCase+RKResourceAssertions.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3E7D941EE0695500CC8241 /* XCTestCase+RKResourceAssertions.m */; };
 		EF3E7D971EE069E600CC8241 /* RKResourceContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = EF3E7D961EE069E600CC8241 /* RKResourceContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF81B6F71EDF287C000C9D68 /* RKResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EF81B6F51EDF287B000C9D68 /* RKResourceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF81B6F81EDF287C000C9D68 /* RKResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF81B6F61EDF287B000C9D68 /* RKResourceManager.m */; };
+		EF81B6FA1EDF28B3000C9D68 /* RKResourceManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF81B6F91EDF28B3000C9D68 /* RKResourceManagerTests.m */; };
 		EFBA47971EDDF96800A7A367 /* RKResourceFileResourceListParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA47951EDDF96800A7A367 /* RKResourceFileResourceListParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		EFBA47981EDDF96800A7A367 /* RKResourceFileResourceListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBA47961EDDF96800A7A367 /* RKResourceFileResourceListParser.m */; };
 		EFBA479B1EDDF9AB00A7A367 /* RKResourcePOD.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBA47991EDDF9AA00A7A367 /* RKResourcePOD.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -113,7 +119,14 @@
 		EF2441661EDD5B9C00C90F55 /* RKDataParserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKDataParserProtocol.h; path = Protocols/RKDataParserProtocol.h; sourceTree = "<group>"; };
 		EF2441681EDD5BE900C90F55 /* NSFileHandle+RKDataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileHandle+RKDataParser.h"; path = "Categories/NSFileHandle+RKDataParser.h"; sourceTree = "<group>"; };
 		EF2441691EDD5BE900C90F55 /* NSFileHandle+RKDataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileHandle+RKDataParser.m"; path = "Categories/NSFileHandle+RKDataParser.m"; sourceTree = "<group>"; };
+		EF3E7D8E1EDFFBED00CC8241 /* ResourceManagerTest1.rsrc */ = {isa = PBXFileReference; lastKnownFileType = archive.rsrc; path = ResourceManagerTest1.rsrc; sourceTree = "<group>"; };
+		EF3E7D8F1EDFFBED00CC8241 /* ResourceManagerTest2.rsrc */ = {isa = PBXFileReference; lastKnownFileType = archive.rsrc; path = ResourceManagerTest2.rsrc; sourceTree = "<group>"; };
+		EF3E7D931EE0695500CC8241 /* XCTestCase+RKResourceAssertions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+RKResourceAssertions.h"; path = "Helpers/XCTestCase+RKResourceAssertions.h"; sourceTree = "<group>"; };
+		EF3E7D941EE0695500CC8241 /* XCTestCase+RKResourceAssertions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+RKResourceAssertions.m"; path = "Helpers/XCTestCase+RKResourceAssertions.m"; sourceTree = "<group>"; };
 		EF3E7D961EE069E600CC8241 /* RKResourceContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKResourceContainer.h; path = Protocols/RKResourceContainer.h; sourceTree = "<group>"; };
+		EF81B6F51EDF287B000C9D68 /* RKResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKResourceManager.h; path = Model/RKResourceManager.h; sourceTree = "<group>"; };
+		EF81B6F61EDF287B000C9D68 /* RKResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKResourceManager.m; path = Model/RKResourceManager.m; sourceTree = "<group>"; };
+		EF81B6F91EDF28B3000C9D68 /* RKResourceManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKResourceManagerTests.m; sourceTree = "<group>"; };
 		EFBA47951EDDF96800A7A367 /* RKResourceFileResourceListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKResourceFileResourceListParser.h; path = Parsers/RKResourceFileResourceListParser.h; sourceTree = "<group>"; };
 		EFBA47961EDDF96800A7A367 /* RKResourceFileResourceListParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKResourceFileResourceListParser.m; path = Parsers/RKResourceFileResourceListParser.m; sourceTree = "<group>"; };
 		EFBA47991EDDF9AA00A7A367 /* RKResourcePOD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKResourcePOD.h; path = PODs/RKResourcePOD.h; sourceTree = "<group>"; };
@@ -166,6 +179,8 @@
 				EFBA47B21EDE7FFA00A7A367 /* ResourceFork.rsrc */,
 				EFBA47B41EDE83A700A7A367 /* ComplexResourceFork.rsrc */,
 				EFBA47B61EDE861F00A7A367 /* BadResourceFork.rsrc */,
+				EF3E7D8E1EDFFBED00CC8241 /* ResourceManagerTest1.rsrc */,
+				EF3E7D8F1EDFFBED00CC8241 /* ResourceManagerTest2.rsrc */,
 			);
 			path = TestData;
 			sourceTree = "<group>";
@@ -179,6 +194,8 @@
 				EF22BD421EDD972100B9A59A /* RKResource.m */,
 				EF22BD4A1EDDACC400B9A59A /* RKResourceFile.h */,
 				EF22BD4B1EDDACC400B9A59A /* RKResourceFile.m */,
+				EF81B6F51EDF287B000C9D68 /* RKResourceManager.h */,
+				EF81B6F61EDF287B000C9D68 /* RKResourceManager.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -249,6 +266,7 @@
 		EF2441571EDD5ACD00C90F55 /* ResourceKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				EF3E7D921EE0693100CC8241 /* Helpers */,
 				EF22BD351EDD6E4D00B9A59A /* TestData */,
 				EF24415A1EDD5ACD00C90F55 /* Info.plist */,
 				EF22BD381EDD6E7200B9A59A /* RKDataParserFileHandleTests.m */,
@@ -262,6 +280,7 @@
 				EFBA47A81EDE059E00A7A367 /* RKTypeBuilderTests.m */,
 				EFBA47AE1EDE07E100A7A367 /* RKResourceBuilderTests.m */,
 				EFBA47B01EDE7FC700A7A367 /* RKResourceFileTests.m */,
+				EF81B6F91EDF28B3000C9D68 /* RKResourceManagerTests.m */,
 			);
 			path = ResourceKitTests;
 			sourceTree = "<group>";
@@ -286,6 +305,15 @@
 				EF3E7D961EE069E600CC8241 /* RKResourceContainer.h */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		EF3E7D921EE0693100CC8241 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF3E7D931EE0695500CC8241 /* XCTestCase+RKResourceAssertions.h */,
+				EF3E7D941EE0695500CC8241 /* XCTestCase+RKResourceAssertions.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		EFBA47A11EDE039B00A7A367 /* Builders */ = {
@@ -313,6 +341,7 @@
 				EF22BD3D1EDD76B000B9A59A /* RKType.h in Headers */,
 				EF22BD431EDD972100B9A59A /* RKResource.h in Headers */,
 				EF22BD4C1EDDACC400B9A59A /* RKResourceFile.h in Headers */,
+				EF81B6F71EDF287C000C9D68 /* RKResourceManager.h in Headers */,
 				EF3E7D971EE069E600CC8241 /* RKResourceContainer.h in Headers */,
 				EF24415B1EDD5ACD00C90F55 /* ResourceKit.h in Headers */,
 				EF22BD711EDDD88900B9A59A /* RKTypePOD.h in Headers */,
@@ -417,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF3E7D911EDFFBED00CC8241 /* ResourceManagerTest2.rsrc in Resources */,
 				EFBA47B31EDE7FFA00A7A367 /* ResourceFork.rsrc in Resources */,
 				EFBA479E1EDDFFFD00A7A367 /* RsrcResourceHeaders.hex in Resources */,
 				EFBA47B51EDE83A700A7A367 /* ComplexResourceFork.rsrc in Resources */,
@@ -424,6 +454,7 @@
 				EF22BD371EDD6E4D00B9A59A /* RawTestData.hex in Resources */,
 				EF22BD481EDDA5E200B9A59A /* RsrcPreambleData.hex in Resources */,
 				EF22BD5E1EDDC3E800B9A59A /* RsrcMapMetaData.hex in Resources */,
+				EF3E7D901EDFFBED00CC8241 /* ResourceManagerTest1.rsrc in Resources */,
 				EF22BD761EDDF6D900B9A59A /* RsrcTypeList.hex in Resources */,
 				EFBA47B71EDE861F00A7A367 /* BadResourceFork.rsrc in Resources */,
 			);
@@ -439,6 +470,7 @@
 				EF22BD4D1EDDACC400B9A59A /* RKResourceFile.m in Sources */,
 				EF22BD681EDDD3F300B9A59A /* RKResourceFileTypeListParser.m in Sources */,
 				EFBA47AD1EDE070600A7A367 /* RKResourceBuilder.m in Sources */,
+				EF81B6F81EDF287C000C9D68 /* RKResourceManager.m in Sources */,
 				EF22BD6C1EDDD65E00B9A59A /* NSData+RKDataParser.m in Sources */,
 				EF22BD3E1EDD76B000B9A59A /* RKType.m in Sources */,
 				EF24416B1EDD5BE900C90F55 /* NSFileHandle+RKDataParser.m in Sources */,
@@ -458,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF22BD401EDD798000B9A59A /* RKTypeTests.m in Sources */,
+				EF3E7D951EE0695500CC8241 /* XCTestCase+RKResourceAssertions.m in Sources */,
 				EFBA47A91EDE059E00A7A367 /* RKTypeBuilderTests.m in Sources */,
 				EF22BD391EDD6E7200B9A59A /* RKDataParserFileHandleTests.m in Sources */,
 				EF22BD741EDDD99C00B9A59A /* RKResourceFileTypeListParser.m in Sources */,
@@ -467,6 +500,7 @@
 				EFBA47AF1EDE07E100A7A367 /* RKResourceBuilderTests.m in Sources */,
 				EF22BD6E1EDDD75600B9A59A /* RKDataParserDataTests.m in Sources */,
 				EF22BD461EDD9E5900B9A59A /* RKResourceTests.m in Sources */,
+				EF81B6FA1EDF28B3000C9D68 /* RKResourceManagerTests.m in Sources */,
 				EF22BD5A1EDDC09F00B9A59A /* RKResourceFilePreambleParserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -42,10 +42,17 @@
 + (nonnull instancetype)withCode:(nonnull NSString *)code;
 
 
-/// Add a new resource to the type group. If an existing resource
-/// with the same resource id is already present, then it will
-/// be replaced by the new resource.
+/// Add a new resource to the type group. If the caller specifies
+/// that duplicates should be replaced then existing resource
+/// with the same resource id will be replaced by the new resource.
 - (void)addResource:(nonnull RKResource *)resource;
+- (void)addResource:(nonnull RKResource *)resource replacingDuplicates:(BOOL)replaceDuplicates;
+
+/// Add resources to the type group from another type group. If the caller specifies
+/// that duplicates should be replaced then existing resource
+/// with the same resource id will be replaced by the new resource.
+- (void)mergeType:(nonnull RKType *)type;
+- (void)mergeType:(nonnull RKType *)type replacingDuplicates:(BOOL)replaceDuplicates;
 
 /// Retrieve the resource with the specified id. If the resource does not
 /// exist then it will return nil.

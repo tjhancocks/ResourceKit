@@ -22,23 +22,15 @@
 // SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
-
-FOUNDATION_EXPORT double ResourceKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char ResourceKitVersionString[];
-
-// Protocols
-#import <ResourceKit/RKDataParserProtocol.h>
-#import <ResourceKit/RKParserProtocol.h>
+#import <XCTest/XCTest.h>
 #import <ResourceKit/RKResourceContainer.h>
 
-// Categories
-#import <ResourceKit/NSFileHandle+RKDataParser.h>
-#import <ResourceKit/NSData+RKDataParser.h>
+@interface XCTestCase (RKResourceAssertions)
 
-// Model
-#import <ResourceKit/RKType.h>
-#import <ResourceKit/RKResource.h>
-#import <ResourceKit/RKResourceFile.h>
-#import <ResourceKit/RKResourceManager.h>
+/// Assert that the resource container has either the specified RKType or RKResource
+/// as a child/member. This recursively checks over all types and resources that
+/// have been added to the resource container.
+- (void)assert:(nullable id<RKResourceContainer>)container has:(nullable id)instance with:(nullable id)object;
+- (void)assert:(nullable id<RKResourceContainer>)container hasNot:(nullable id)instance with:(nullable id)object;
 
+@end

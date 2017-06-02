@@ -84,6 +84,11 @@
 
 - (void)addResource:(nonnull RKResource *)resource
 {
+    [self addResource:resource replacingDuplicates:YES];
+}
+
+- (void)addResource:(nonnull RKResource *)resource replacingDuplicates:(BOOL)replaceDuplicates
+{
     if (![resource.type isEqual:self]) {
         return;
     }
@@ -91,12 +96,26 @@
     NSSet <RKResource *> *currentResources = [_resources objectsPassingTest:^BOOL(RKResource *obj, BOOL *stop) {
         return [obj isEqual:resource];
     }];
-    if (currentResources.count > 0) {
-        [_resources minusSet:currentResources];
+    
+    if (!replaceDuplicates && currentResources.count > 0) {
+        return;
     }
     
+    [_resources minusSet:currentResources];
     [resource switchTypeTo:self];
     [_resources addObject:resource];
+}
+
+- (void)mergeType:(nonnull RKType *)type
+{
+    [self mergeType:type replacingDuplicates:YES];
+}
+
+- (void)mergeType:(nonnull RKType *)type replacingDuplicates:(BOOL)replaceDuplicates
+{
+    for (RKResource *resource in type.allResources) {
+        [self addResource:resource replacingDuplicates:replaceDuplicates];
+    }
 }
 
 - (nullable RKResource *)resourceWithId:(int16_t)id
