@@ -27,7 +27,7 @@
 
 @implementation RKType {
     __strong NSString *_code;
-    __strong NSMutableSet <RKResource *> *_resources;
+    __strong NSMutableArray <RKResource *> *_resources;
 }
 
 #pragma mark - Initialisers
@@ -36,7 +36,7 @@
 {
     RKType *type = RKType.new;
     type->_code = code.copy;
-    type->_resources = NSMutableSet.new;
+    type->_resources = NSMutableArray.new;
     return type;
 }
 
@@ -55,7 +55,7 @@
 
 - (NSArray<RKResource *> *)allResources
 {
-    return _resources.allObjects;
+    return _resources.copy;
 }
 
 
@@ -93,15 +93,11 @@
         return;
     }
     
-    NSSet <RKResource *> *currentResources = [_resources objectsPassingTest:^BOOL(RKResource *obj, BOOL *stop) {
-        return [obj isEqual:resource];
-    }];
-    
-    if (!replaceDuplicates && currentResources.count > 0) {
+    if (!replaceDuplicates && [_resources containsObject:resource]) {
         return;
     }
     
-    [_resources minusSet:currentResources];
+    [_resources removeObject:resource];
     [resource switchTypeTo:self];
     [_resources addObject:resource];
 }
