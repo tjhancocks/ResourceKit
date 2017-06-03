@@ -38,6 +38,7 @@
     RKResource *resource = [RKResource ofType:[RKType withCode:pod.typeCode] withId:pod.id];
     resource.name = pod.name;
     resource.data = pod.data;
+    resource.attributes = pod.flags;
     return resource;
 }
 

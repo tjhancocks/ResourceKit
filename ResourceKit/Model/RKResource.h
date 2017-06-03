@@ -24,6 +24,16 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSUInteger, RKResourceAttributes)
+{
+    RKResourceSystemHeap = 0x40,
+    RKResourcePurgable = 0x20,
+    RKResourceLocked = 0x10,
+    RKResourceProtected = 0x08,
+    RKResourcePreload = 0x04,
+    RKResourceChanged = 0x02
+};
+
 @class RKType;
 
 @interface RKResource : NSObject
@@ -39,6 +49,9 @@
 
 /// The actual resource data of the receiver.
 @property (nullable, atomic, strong) NSData *data;
+
+/// The attributes of the resource.
+@property (atomic, assign) RKResourceAttributes attributes;
 
 
 /// Create a new resource with the specified ID and type

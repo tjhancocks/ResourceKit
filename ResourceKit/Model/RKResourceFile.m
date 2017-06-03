@@ -83,6 +83,7 @@
     }
     
     // Build all the actual structures from the PODs
+    _attributes = resourceFilePod.mainFlags;
     _types = [[RKTypeBuilder buildFromArrayOfPODs:resourceFilePod.typePods] mutableCopy];
     
     NSArray <RKResource *> *allResources = [RKResourceBuilder buildFromArrayOfPODs:resourceFilePod.resourcePods];
