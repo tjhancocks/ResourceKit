@@ -1,5 +1,5 @@
 # ResourceKit
-![Version](https://img.shields.io/badge/version-0.5.5-000000.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg) 
+[![Build Status](https://travis-ci.org/tjhancocks/ResourceKit.svg?branch=master)](https://travis-ci.org/tjhancocks/ResourceKit) ![Version](https://img.shields.io/badge/version-0.5.5-000000.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg) 
 
 ResourceKit is a framework for reading and handling the legacy ResourceFork/ResourceFile format. This is not intended as a mechanism for storing new data in modern projects, but rather as a way for modern projects to access and utilise data in old files.
 

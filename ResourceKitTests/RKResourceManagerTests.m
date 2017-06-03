@@ -187,7 +187,7 @@
     
     NSArray <RKResource *> *result = [RKResourceManager.sharedManager resourcesWithType:[RKType withCode:@"UNIT"]];
     XCTAssertEqual(result.count, 2);
-    XCTAssertEqualObjects(result.firstObject.name, @"Test Resource 1");
+    XCTAssertEqualObjects(result.firstObject.name, @"Test Resource 2");
 }
 
 - (void)testResourceManager_resourcesWithInvalidType_returnsNilResult
