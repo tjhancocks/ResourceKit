@@ -1,3 +1,3 @@
 language: objective-c
 xcode_project: ResourceKit.xcodeproj
-xcode_scheme: ResourceKitTests
+xcode_scheme: ResourceKit
